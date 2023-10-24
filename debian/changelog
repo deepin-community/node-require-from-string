@@ -1,5 +1,44 @@
-template-repository (1.0-1) unstable; urgency=medium
+node-require-from-string (2.0.2+~1.2.1-1) unstable; urgency=medium
 
-  * Initial release
+  * Team upload
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Debian Janitor ]
+  * Update standards version to 4.4.1, no changes needed.
+  * Apply multi-arch hints.
+    + node-require-from-string: Add Multi-Arch: foreign.
+  * Bump debhelper from old 12 to 13.
+  * Set upstream metadata fields: Bug-Submit.
+  * Update standards version to 4.5.1, no changes needed.
+
+  [ Yadd ]
+  * Update standards version to 4.6.0, no changes needed.
+  * Add "Rules-Requires-Root: no"
+  * Modernize debian/watch
+    * Fix filenamemangle
+    * Fix GitHub tags regex
+  * Use dh-sequence-nodejs instead of pkg-js-tools
+  * Drop dependency to nodejs
+  * Mark test dependencies with <!nocheck>
+  * Embed typescript definitions and repack
+
+ -- Yadd <yadd@debian.org>  Mon, 22 Nov 2021 17:06:15 +0100
+
+node-require-from-string (2.0.2-1) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.4.0
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+  * New upstream version 2.0.2
+  * Fix test for nodejs >= 10.16 (reported)
+  * Update VCS fields to salsa
+  * Switch test and install to pkg-js-tools (fixes debci)
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 23 Sep 2019 13:29:21 +0200
+
+node-require-from-string (2.0.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #879700)
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 25 Oct 2017 00:48:42 +0530
